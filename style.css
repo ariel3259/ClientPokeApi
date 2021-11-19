@@ -31,7 +31,7 @@
     grid-row-start : 3;
     border : 5px solid #000;
     border-radius : 7.5px;
-    background : #0050ff;
+    background : lightgreen;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     display: flex;
     flex-wrap: wrap;
@@ -58,24 +58,25 @@
 }
 
 .card {
-    background-color : midnightblue;
+    background-color : #fff;
     height :300px;
     width: 200px;
     margin : 10px 10px;
     display: flex;
     flex-flow: column wrap;
-    border: 2.5px solid #fff;
+    border-radius: 25px;
+    border: 1px solid #000;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .img {
     height:50%;
     width: 100%;
-    background : #fff;
 }
  .description-pokemon {
     width: 100%;
     font-size: 12px;
     padding : 25px 25px;
     text-align: start;
-    color :#fff;
-    border-top: 3px solid #f00;
+    color :#000;
+    border-top: 1px solid #000;
 }

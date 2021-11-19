@@ -1,7 +1,6 @@
 
 
 btnShow.onclick = () =>{
-
     const pokeIdArray = [];
     for(let i = 0; i < 5; i++){
         pokeIdArray.push(Math.round( Math.random() * (839-1) + 1))
