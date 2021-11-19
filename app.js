@@ -13,7 +13,8 @@ btnShow.onclick = () =>{
             let pokeId = pokemon.id;
             let image = pokemon.sprites.front_default;
             let habilities = pokemon.abilities.map( element => element.ability.name );
-            mapPokemon(name, pokeId, habilities, image);
+            let types = pokemon.types.map( element => element.type.name);
+            mapPokemon(name, pokeId, habilities, image, types);
        }catch(err){
             console.log(err);
             return;
@@ -22,7 +23,7 @@ btnShow.onclick = () =>{
 }
 
 
-const mapPokemon = (name,id,habilities,image) =>{
+const mapPokemon = (name, id, habilities, image, types) =>{
     containerPokemons.innerHTML += 
     `  
         <div class = "card">
@@ -31,6 +32,7 @@ const mapPokemon = (name,id,habilities,image) =>{
                 <h2>Id : ${id}</h2>
                 <h2>Name : ${name}</h2>
                 <h2>Habilities : ${habilities.map(element => element)}</h2>
+                <h2>Types : ${types.map( element => element)}</h2>
             </div>
         </div>
     `;
